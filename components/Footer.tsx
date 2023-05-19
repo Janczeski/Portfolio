@@ -10,12 +10,10 @@ export default function Footer() {
     <Box>
       <Container
         as={Stack}
-        maxW={'6xl'}
-        py={4}
-        direction={{ base: 'column', md: 'row' }}
-        spacing={4}
+        spacing={0}
         justify={{ base: 'center'}}
         align={{ base: 'center', md: 'center' }}>
+        <Text>Website made by Vinicius Z. Janczeski </Text>
         <Text>© 2002 All rights reserved</Text>
       </Container>
     </Box>

@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 export default function About(){
 
     return(
-        <Stack minH={'80vh'} direction={{ base: 'column', md: 'row' }} id='Sobre'>
+        <Stack minH={'90vh'} direction={{ base: 'column', md: 'row' }} id='Sobre'>
             <Flex p={5} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={9} w={'full'} maxW={'70vh'}>
                 <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
