@@ -1,5 +1,5 @@
 import { useColorMode } from '@chakra-ui/react';
-import {MdDarkMode, MdLightMode} from "react-icons/md"; 
+import {MdDarkMode, MdLightMode} from "react-icons/md";  
 import React, { useState } from "react";
 import { ReactNode } from 'react';
 import {

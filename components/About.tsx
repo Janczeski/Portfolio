@@ -1,4 +1,4 @@
-import { Stack, Heading, useBreakpointValue, Flex, Text, Image } from "@chakra-ui/react"
+import { Stack, Heading, useBreakpointValue, Flex, Text, Image, IconButton } from "@chakra-ui/react"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function About(){
@@ -34,10 +34,22 @@ export default function About(){
                 </Text>
                 <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                     <div onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}>
-                    <FaLinkedin size={'40'}/>
+                        <IconButton
+                            boxSize='50px'
+                            aria-label={""} 
+                            border={'None'}
+                            variant={"outline"}
+                            fontSize='40px'
+                            icon={<FaLinkedin/>}/>
                     </div>
                     <div onClick={() => window.open('https://github.com/Janczeski')}>
-                    <FaGithub size={'40'}/>
+                        <IconButton
+                            boxSize='50px'
+                            aria-label={""}
+                            border={'None'}
+                            variant={"outline"}
+                            fontSize='40px'
+                            icon={<FaGithub/>}/>
                     </div>
                 </Stack>
                 </Stack>
