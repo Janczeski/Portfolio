@@ -24,10 +24,12 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 );
 
 export default function withAction() {
+  let isDarkTheme: boolean = false;
+  let currentImage: string = 'light_image.png';
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { toggleColorMode } = useColorMode()
   const [isActive, setIsActive] = useState(false);
-
   const handleClickScroll = (option) => {
     const element = document.getElementById(option);
     if (element) {
@@ -38,7 +40,7 @@ export default function withAction() {
   return (
     <>
       <Box w='100%' bg={useColorModeValue('blackAlpha.100', 'blackAlpha.100')} position={'fixed'}>
-          <Flex h={16} alignItems={'center'} justifyContent={'space-between'} marginRight={'1vw'}>
+          <Flex h={20} alignItems={'center'} justifyContent={'space-between'} marginRight={'1vw'}>
             <IconButton
                 size={'md'}
                 icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -48,6 +50,7 @@ export default function withAction() {
             />
           <HStack justifyContent={'right'} w='95%'>
             <HStack
+                fontSize={'2vh'}
                 as={'nav'}
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}>
@@ -66,9 +69,10 @@ export default function withAction() {
 
             </HStack>
           </HStack>
+          
           <Flex alignItems={'center'}>
             <div onClick={() => {toggleColorMode(); setIsActive(!isActive)}}>
-                {isActive ? <MdLightMode/> : <MdDarkMode/>}
+                {isActive ? <MdLightMode size={'20'}/> : <MdDarkMode size={'20'}/>}
             </div>
             <Menu>
               <MenuButton
