@@ -22,7 +22,7 @@ export default function Projects(){
                     <Stack spacing={5} w={'full'} maxW={'60vh'}>
                         <Image
                             
-                            src="/images/light_portfolio2.jfif"
+                            src="/images/light_portfolio3.jfif"
                             alt="Perfil"
                         />
                     </Stack>

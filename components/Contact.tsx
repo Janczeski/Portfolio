@@ -1,15 +1,13 @@
-import { Flex, Stack, Image, Heading, useBreakpointValue, Text, useColorModeValue, Button, } from "@chakra-ui/react";
-import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
+import { Flex, Stack, Image, Heading, Text, useColorModeValue,} from "@chakra-ui/react";
+import { AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
+
 import {MdOutlineEmail } from "react-icons/md";
 import { useToast } from '@chakra-ui/react'
-import { useClipboard } from '@chakra-ui/react'
 import ContactButton from "./ContactButton";
 import React from "react";
 
 export default function Contact(){
-
     const toast = useToast()
-
     function copyShow() {
         toast({
         title: 'E-mail Copiado.',
@@ -33,15 +31,19 @@ export default function Contact(){
                         Se gostou do meu trabalho e deseja se comunicar comigo, fique à vontade para me mandar uma mensagem!
                     </Text>
                     <ContactButton text='Whatsapp' icon={<AiOutlineWhatsApp size={40}/>} onClick={() => window.open('https://api.whatsapp.com/send?phone=5567998812814')}/>
-                    <ContactButton text='Instagram' icon={<AiOutlineInstagram size={40}/>} onClick={() => window.open('https://www.instagram.com/janczeski_/')}/>
+                    <ContactButton text='Linkedin' icon={<AiOutlineLinkedin size={40}/>} onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}/>
                     <ContactButton text='E-Mail' icon={<MdOutlineEmail size={40}/>} onClick={() => copyShow()}/>
                 </Stack>
             </Flex>          
             <Flex flex={1} align={'center'} justify={'center'}>
-                <Stack spacing={5} w={'full'} maxW={'60vh'}>
+                <Stack spacing={5} w={'full'}>
                     <Image
-                        src="/images/iconperfil.jpg"
+                        borderRadius={'50%'}
+                        shadow={'dark-lg'}
+                        boxSize={'40vh'}
+                        src="https://pbs.twimg.com/media/FydGwFzWAAAH5xs?format=jpg&name=4096x4096"
                         alt="Perfil"
+                        
                     />
                 </Stack>
             </Flex>

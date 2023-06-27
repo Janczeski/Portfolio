@@ -1,4 +1,4 @@
-import { Stack, Heading, useBreakpointValue, Flex, Text, Image, IconButton, useColorModeValue } from "@chakra-ui/react"
+import { Stack, Heading, Flex, Text, Image, IconButton, useColorModeValue } from "@chakra-ui/react"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function About(){
@@ -24,7 +24,7 @@ export default function About(){
                         <div onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}>
                             <IconButton
                                 boxSize='50px'
-                                aria-label={""} 
+                                aria-label={""}
                                 border={'None'}
                                 variant={"outline"}
                                 fontSize='40px'
@@ -45,7 +45,10 @@ export default function About(){
             <Flex flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={5} w={'full'} maxW={'60vh'}>
                     <Image
-                        src="/images/iconperfil.jpg"
+                        shadow={'dark-lg'}
+                        boxSize={'60vh'}
+                        borderRadius={'50%'}
+                        src="https://pbs.twimg.com/media/FydGwUPWAAEGnma?format=jpg&name=small"
                         alt="Perfil"
                     />
                 </Stack>

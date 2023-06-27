@@ -1,4 +1,4 @@
-import { Stack, Flex, Text, useColorModeValue, Box, Container, chakra, shouldForwardProp } from "@chakra-ui/react";
+import { Stack, Flex, Text, useColorModeValue, Container, chakra, shouldForwardProp } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from 'framer-motion';
 import { FaJsSquare, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";

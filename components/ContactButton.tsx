@@ -1,7 +1,5 @@
-import { Button, Stack } from "@chakra-ui/react"
+import { Button, Stack, useClipboard } from "@chakra-ui/react"
 import React, { ReactElement } from "react"
-import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai"
-import { MdOutlineEmail } from "react-icons/md"
 
 
 interface IContactButtonProps{
@@ -12,8 +10,9 @@ interface IContactButtonProps{
 }
 
 export default function ContactButton({text, icon, onClick}: IContactButtonProps){
+    const { onCopy} = useClipboard("vinicius.zanquini.janczeski@gmail.com");
     return(
-        <Stack direction={{ base: 'row', md: 'row' }} maxW={'80vh'} align={'center'}>
+        <Stack direction={{ base: 'row', md: 'row' }} maxW={'80vh'} align={'center'} onClick={onCopy}>
             <Button
                 onClick={() => onClick()}
                 leftIcon={icon} 
