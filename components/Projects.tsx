@@ -34,7 +34,7 @@ export default function Projects(){
                         </Text>
                         <Text fontSize={{ base: 'md', lg: 'lg' }} color={useColorModeValue('gray.700', 'gray.100')} >
                             Este é meu primeiro projeto desenvolvido, ele se refere ao meu portifólio, que é onde estamos no momento,
-                            foi desenvolvido em Flutter com Chakra UI e aqui estará presente todos meus projetos futuros.
+                            foi desenvolvido em Flutter com Chakra UI e aqui estarão presentes todos meus projetos futuros.
                         </Text>
                     </Stack>
                 </Flex>      

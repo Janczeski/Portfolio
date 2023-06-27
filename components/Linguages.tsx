@@ -14,130 +14,77 @@ const ChakraBox = chakra(motion.div, {
 export default function Linguages(){
   return(
       <Stack minH={'10vh'} direction={{ base: 'column', md: 'row' }} bg={useColorModeValue('gray.100', 'gray.700')}>
-        <Flex p={5} flex={1} alignItems={'center'} justify={'center'}>
-          <Stack direction={{ base: 'column', md: 'row' }} spacing={12} color={useColorModeValue('gray.900', 'gray.800')}>
-            <Stack borderRightWidth={'3px'} borderColor={useColorModeValue('gray.300', 'gray.800')}>
-              <Text fontSize={'2vh'} marginRight={'3vh'} color={useColorModeValue('gray.800', 'gray.100')}>
+        <Flex p={5} flex={1} alignItems={'center'} justify={'center'} >
+          <Stack direction={{ base: 'column', md: 'row' }} spacing={12} color={useColorModeValue('gray.900', 'gray.800')} marginBottom={'5vh'}>
+            <Stack borderRightWidth={'3px'} borderColor={useColorModeValue('gray.300', 'gray.800')}  justify={'center'}>
+              <Text fontSize={'2vh'} marginRight={'3vh'} color={useColorModeValue('gray.800', 'gray.100')} minW={'10vh'}>
                 Tech Stack     
               </Text>
             </Stack>
 
             <Container display="flex">
-              <ChakraBox 
-                animate={{
-                  scale: [1, 1.5, 1.5, 1, 1],
-                  rotate: [0, 0, 360, 360, 0],
-                  borderRadius: ["50%", "50%", "50%", "50%", "50%"],
-                }}
-                // @ts-ignore no problem in operation, although type error appears.
-                transition={{
-                  duration: 5,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
+              <ChakraBox   
                 shadow={'dark-lg'}
-                rounded='md' 
+                borderRadius={"full"}
                 padding="2"
-                bgGradient="linear(to-l, #FFFF, #FFFF)"
+                bgColor={'whiteAlpha.900'}
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
                 width="7vh"
                 height="7vh"
               >
-              <FaJsSquare size={'40'}/>
-              </ChakraBox>
-            </Container>
-            
-            <Container display="flex">
-              <ChakraBox 
-                animate={{
-                  scale: [1, 1.5, 1.5, 1, 1],
-                  rotate: [0, 0, 360, 360, 0],
-                  borderRadius: ["50%", "50%", "50%", "50%", "50%"],
-                }}
-                // @ts-ignore no problem in operation, although type error appears.
-                transition={{
-                  duration: 5,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
-                shadow={'dark-lg'}
-                rounded='md' 
-                bg='white'
-                padding="2"
-                bgGradient="linear(to-l, #FFFF, #FFFF)"
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                width="7vh"
-                height="7vh"
-              >
-              <SiFlutter size={'40'}/>
+                <FaJsSquare size={'40'}/>
               </ChakraBox>
             </Container>
 
             <Container display="flex">
-              <ChakraBox 
-                animate={{
-                  scale: [1, 1.5, 1.5, 1, 1],
-                  rotate: [0, 0, 360, 360, 0],
-                  borderRadius: ["50%", "50%", "50%", "50%", "50%"],
-                }}
-                // @ts-ignore no problem in operation, although type error appears.
-                transition={{
-                  duration: 5,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
+              <ChakraBox
                 shadow={'dark-lg'}
-                rounded='md' 
-                bg='white'
+                borderRadius={"full"}
                 padding="2"
-                bgGradient="linear(to-l, #FFFF, #FFFF)"
+                bgColor={'whiteAlpha.900'}
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
                 width="7vh"
                 height="7vh"
               >
-              <FaNodeJs size={'40'}/>
+                <SiFlutter size={'40'}/>
+              </ChakraBox>
+            </Container>  
+
+            <Container display="flex">
+              <ChakraBox   
+                shadow={'dark-lg'}
+                borderRadius={"full"}
+                padding="2"
+                bgColor={'whiteAlpha.900'}
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                width="7vh"
+                height="7vh"
+              >
+                <FaNodeJs size={'40'}/>
               </ChakraBox>
             </Container>
 
             <Container display="flex">
-              <ChakraBox 
-                animate={{
-                  scale: [1, 1.5, 1.5, 1, 1],
-                  rotate: [0, 0, 360, 360, 0],
-                  borderRadius: ["50%", "50%", "50%", "50%", "50%"],
-                }}
-                // @ts-ignore no problem in operation, although type error appears.
-                transition={{
-                  duration: 5,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
+              <ChakraBox   
                 shadow={'dark-lg'}
-                rounded='md' 
-                bg='white'
+                borderRadius={"full"}
                 padding="2"
-                bgGradient="linear(to-l, #FFFF, #FFFF)"
+                bgColor={'whiteAlpha.900'}
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
                 width="7vh"
                 height="7vh"
               >
-              <FaReact size={'40'}/>
+                <FaReact size={'40'}/>
               </ChakraBox>
             </Container>
-            
-            
           </Stack>
         </Flex>  
       </Stack>
