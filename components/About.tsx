@@ -48,7 +48,7 @@ export default function About(){
                         shadow={'dark-lg'}
                         boxSize={'60vh'}
                         borderRadius={'50%'}
-                        src="https://pbs.twimg.com/media/FydGwUPWAAEGnma?format=jpg&name=small"
+                        src='/images/iconperfil.jpg'
                         alt="Perfil"
                     />
                 </Stack>
