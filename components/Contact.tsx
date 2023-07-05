@@ -19,7 +19,7 @@ export default function Contact(){
     }
 
     return(
-        <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }} id="Contato" bg={useColorModeValue('gray.100', 'gray.700')}> 
+        <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} id="Contato" bg={useColorModeValue('gray.100', 'gray.700')}> 
             <Flex p={5} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={9} w={'full'} maxW={'70vh'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>

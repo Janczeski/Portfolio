@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <Box bg={useColorModeValue('gray.200', 'gray.700')}>
+    <Box minH={'10vh'} bg={useColorModeValue('gray.200', 'gray.700')}>
       <Container
         as={Stack}
         spacing={0}

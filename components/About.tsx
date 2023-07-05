@@ -20,10 +20,10 @@ export default function About(){
                         Desenvolvedor Full Stack, tecnólogo em Informática para Internet pelo Instito Federal (IFMS), 
                         cursando Sistema de Informação na Universidade da Grande Dourados (UFGD).
                     </Text>
-                    <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                    <Stack direction={{ base: 'row', md: 'row' }} spacing={4}>
                         <div onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}>
                             <IconButton
-                                boxSize='50px'
+                                boxSize='30px'
                                 aria-label={""}
                                 border={'None'}
                                 variant={"outline"}
@@ -32,7 +32,7 @@ export default function About(){
                         </div>
                         <div onClick={() => window.open('https://github.com/Janczeski')}>
                             <IconButton
-                                boxSize='50px'
+                                boxSize='30px'
                                 aria-label={""}
                                 border={'None'}
                                 variant={"outline"}
@@ -45,10 +45,11 @@ export default function About(){
             <Flex flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={5} w={'full'} maxW={'60vh'}>
                     <Image
+                        maxH={{base: 'md', lg: 'lg'}}
+                        maxW={{base: 'md', lg: 'lg'}}
                         shadow={'dark-lg'}
-                        boxSize={'60vh'}
                         borderRadius={'50%'}
-                        src='/images/iconperfil.jpg'
+                        src="https://pbs.twimg.com/media/FydGwUPWAAEGnma?format=jpg&name=small"
                         alt="Perfil"
                     />
                 </Stack>
