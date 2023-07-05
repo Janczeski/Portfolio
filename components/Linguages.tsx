@@ -1,6 +1,6 @@
 import { Stack, Flex, Text, useColorModeValue, Container, Box } from "@chakra-ui/react";
 import { FaJsSquare, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiFlutter } from "react-icons/si";
+import { SiFlutter, SiChakraui } from "react-icons/si";
 
 export default function Linguages(){
   return(
@@ -75,6 +75,21 @@ export default function Linguages(){
                 height={['4vh', '5vh', '6vh', '7vh']}   
               >
                 <FaReact size={'40'}/>
+              </Box>
+            </Container>
+            <Container display="flex">
+              <Box   
+                shadow={'dark-lg'}
+                borderRadius={"full"}
+                padding="2"
+                bgColor={'whiteAlpha.900'}
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                width={['4vh', '5vh', '6vh', '7vh']}
+                height={['4vh', '5vh', '6vh', '7vh']}   
+              >
+                <SiChakraui size={'50'}/>
               </Box>
             </Container>
           </Stack>

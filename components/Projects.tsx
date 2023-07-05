@@ -1,4 +1,6 @@
-import { Stack, Image, Flex, Text, useColorModeValue, } from "@chakra-ui/react";
+import { Stack, Image, Flex, Text, useColorModeValue, Box, Container, } from "@chakra-ui/react";
+import { FaReact } from "react-icons/fa";
+import { SiChakraui, SiFlutter } from "react-icons/si";
 
 
 export default function Projects(){    
@@ -37,6 +39,36 @@ export default function Projects(){
                             Este é meu primeiro projeto desenvolvido, ele se refere ao meu portifólio, que é onde estamos no momento,
                             foi desenvolvido em Flutter com Chakra UI e aqui estarão presentes todos meus projetos futuros.
                         </Text>
+                        <Container display="flex">
+                            <Box   
+                                shadow={'dark-lg'}
+                                borderRadius={"full"}
+                                padding="2"
+                                bgColor={'whiteAlpha.900'}
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                                width={['4vh', '5vh', '6vh']}
+                                height={['4vh', '5vh', '6vh']}
+                                marginRight={'2vh'}
+                            >
+                                <SiFlutter size={'40'}/>
+                            </Box>
+                            <Box   
+                                shadow={'dark-lg'}
+                                borderRadius={"full"}
+                                padding="2"
+                                bgColor={'whiteAlpha.900'}
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                                width={['4vh', '5vh', '6vh']}
+                                height={['4vh', '5vh', '6vh']}   
+                            >
+                                <SiChakraui size={'50'}/>
+                            </Box>
+                        </Container>
+
                     </Stack>
                 </Flex>      
             </Stack>
