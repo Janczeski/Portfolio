@@ -25,7 +25,7 @@ export default function Projects(){
                         <Image
                             shadow={'dark-lg'}
                             borderRadius={'5%'}
-                            src="/images/light_portfolio3.jfif"
+                            src="/images/portfolio.png"
                             alt="Perfil"
                         />
                     </Stack>
