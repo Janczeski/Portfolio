@@ -5,7 +5,7 @@ export default function Projects(){
     return(
         
         
-        <Stack minH={'50vh'} direction={{ base: 'column', md: 'column' }} marginBottom={'10vh'} id='Projetos'>
+        <Stack minH={'50vh'} direction={{ base: 'column', md: 'column' }} marginBottom={'40vh'} id='Projetos'>
             <Flex p={5} flex={1} justify={'center'}>
                 <Stack spacing={2} w={'full'} maxW={'90vh'}>
                         <Text fontSize={{ base: 'md', lg: '3xl'}} color={'blue.400'} as='b'>
@@ -17,17 +17,18 @@ export default function Projects(){
                 </Stack>
             </Flex>
 
-            <Stack direction={{ base: 'column', md: 'row' }}>
+            <Stack direction={{ base: 'column', md: 'row' }} paddingTop={'10vh'}>
                 <Flex flex={1} align={'center'} justify={'right'}>
                     <Stack spacing={5} w={'full'} maxW={'60vh'}>
                         <Image
-                            
+                            shadow={'dark-lg'}
+                            borderRadius={'5%'}
                             src="/images/light_portfolio3.jfif"
                             alt="Perfil"
                         />
                     </Stack>
                 </Flex>
-                <Flex p={5} flex={1} justify={'left'}>
+                <Flex p={5} flex={1} justify={'left'} >
                     <Stack w={'full'} maxW={'60vh'}>
                         <Text fontSize={{ base: 'md', lg: '3xl'}} color={'blue.400'} as='b'>
                             Meu Portfólio
