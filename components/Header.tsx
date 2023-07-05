@@ -64,7 +64,7 @@ export default function withAction() {
                   </div>
 
                   <div onClick={() => handleClickScroll('Contato')}>  
-                    <NavLink key='Contato' >Contato</NavLink>
+                    <NavLink key='Contato'>Contato</NavLink>
                   </div>
 
             </HStack>
