@@ -49,7 +49,7 @@ export default function About(){
                         maxW={{base: 'md', lg: 'lg'}}
                         shadow={'dark-lg'}
                         borderRadius={'50%'}
-                        src="https://pbs.twimg.com/media/FydGwUPWAAEGnma?format=jpg&name=small"
+                        src="/images/perfilphoto.jpg"
                         alt="Perfil"
                     />
                 </Stack>

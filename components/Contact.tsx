@@ -41,7 +41,7 @@ export default function Contact(){
                         borderRadius={'50%'}
                         shadow={'dark-lg'}
                         boxSize={'40vh'}
-                        src="https://pbs.twimg.com/media/FydGwFzWAAAH5xs?format=jpg&name=4096x4096"
+                        src="/images/contactphoto.jpg"
                         alt="Perfil"
                         
                     />
