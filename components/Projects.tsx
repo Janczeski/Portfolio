@@ -20,7 +20,7 @@ export default function Projects(){
                 </Stack>
             </Flex>
 
-            <Stack direction={{ base: 'column', md: 'row' }} paddingTop={paddingtop} bgColor={'red'}>
+            <Stack direction={{ base: 'column', md: 'row' }} paddingTop={paddingtop}>
                 <Flex flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={5} w={'full'} maxW={'60vh'}>
                         <Image
