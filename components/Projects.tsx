@@ -18,7 +18,7 @@ export default function Projects(){
             </Flex>
 
             <Stack direction={{ base: 'column', md: 'row' }} paddingTop={'10vh'}>
-                <Flex flex={1} align={'center'} justify={'right'}>
+                <Flex flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={5} w={'full'} maxW={'60vh'}>
                         <Image
                             shadow={'dark-lg'}

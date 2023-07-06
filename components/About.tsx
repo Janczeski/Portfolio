@@ -46,8 +46,8 @@ export default function About(){
                 <Stack spacing={5} w={'full'} maxW={'60vh'}>
                     <Image
                         alignSelf={'center'}
-                        maxH={['30vh', '40vh', '50vh']}
-                        maxW={['30vh', '40vh', '50vh']}
+                        maxH={['30vh', '30vh', '40vh', '50vh']}
+                        maxW={['30vh', '30vh', '40vh', '50vh']}
                         shadow={'dark-lg'}
                         borderRadius={'50%'}
                         src="/images/perfilphoto2.jpg"

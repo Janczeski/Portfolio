@@ -38,8 +38,9 @@ export default function Contact(){
                 </Flex>
                 
                 <Flex>
-                    <Stack spacing={5} w={'full'} marginBottom={'20vh'} marginLeft={[0, 10, 20, 30, 40]}>
+                    <Stack spacing={5} w={'full'} marginBottom={'20vh'} marginLeft={[0, 10, 20, 30, 40]} align={'center'}>
                         <Image
+                        
                         borderRadius={'50%'}
                         shadow={'dark-lg'}
                         maxH={['30vh', '40vh']}
@@ -50,39 +51,6 @@ export default function Contact(){
                     </Stack>
                 </Flex>
         </Flex>
-           
-    
-
-        // <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} id="Contato" bg={useColorModeValue('gray.100', 'gray.700')}>  
-        //     <Flex p={5} flex={1} align={'center'} justify={'center'}>
-        //         <Stack maxW={'70vh'}>
-        //             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-        //                 <Text as={'span'}>
-        //                     Contate-me
-        //                 </Text>
-        //             </Heading>
-        //             <Text fontSize={{ base: 'md', lg: 'lg' }} color={useColorModeValue('gray.900', 'gray.100')} >
-        //                 Se gostou do meu trabalho e deseja se comunicar comigo, fique à vontade para me mandar uma mensagem!
-        //             </Text>
-        //             <ContactButton text='Whatsapp' icon={<AiOutlineWhatsApp size={40}/>} onClick={() => window.open('https://api.whatsapp.com/send?phone=5567998812814')}/>
-        //             <ContactButton text='Linkedin' icon={<AiOutlineLinkedin size={40}/>} onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}/>
-        //             <ContactButton text='E-Mail' icon={<MdOutlineEmail size={40}/>} onClick={() => copyShow()}/>
-        //         </Stack>
-        //     </Flex> 
-
-        //     <Flex flex={1} align={'center'} justifyItems={'right'}>
-        //         <Stack spacing={5} w={'full'}>
-        //             <Image
-        //                 borderRadius={'50%'}
-        //                 shadow={'dark-lg'}
-        //                 boxSize={'40vh'}
-        //                 src="/images/contactphoto2.jpg"
-        //                 alt="Perfil"
-                        
-        //             />
-        //         </Stack>
-        //     </Flex>
-        // </Stack>
     )
 }
 
