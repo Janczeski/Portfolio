@@ -34,19 +34,19 @@ export default function Linguages(){
 
           <Flex flexWrap="wrap" p={5}>
             <Box marginRight={['4', '8', '12', '16', '20']}>
-              <IconsTech icon={<FaJsSquare color="black" size={'40'}/>}/>
+              <IconsTech icon={<FaJsSquare size={'40'}/>}/>
             </Box>
             <Box marginRight={['4', '8', '12', '16', '20']}>
-              <IconsTech icon={<SiFlutter color="black" size={'40'}/>}/>
+              <IconsTech icon={<SiFlutter size={'40'}/>}/>
             </Box>
             <Box marginRight={['4', '8', '12', '16', '20']}>
-              <IconsTech icon={<SiTsnode color="black" size={'40'}/>}/>
+              <IconsTech icon={<SiTsnode size={'40'}/>}/>
             </Box>
             <Box marginRight={['4', '8', '12', '16', '20']}>
-              <IconsTech icon={<FaReact color="black" size={'40'}/>}/>
+              <IconsTech icon={<FaReact size={'40'}/>}/>
             </Box>
             <Box marginRight={['4', '8', '12', '16', '20']}>
-              <IconsTech icon={<SiChakraui color="black" size={'50'}/>}/>
+              <IconsTech icon={<SiChakraui size={'50'}/>}/>
             </Box>
           </Flex>
         </Flex>
