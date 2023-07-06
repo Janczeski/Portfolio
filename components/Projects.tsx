@@ -5,17 +5,15 @@ import { SiChakraui, SiFlutter } from "react-icons/si";
 
 export default function Projects(){    
     return(
-        
-        
-        <Stack minH={'50vh'} direction={{ base: 'column', md: 'column' }} marginBottom={'40vh'} id='Projetos'>
+        <Stack minH={'60vh'} direction={{ base: 'column', md: 'column' }} marginBottom={'40vh'} id='Projetos'>
             <Flex p={5} flex={1} justify={'center'}>
                 <Stack spacing={2} w={'full'} maxW={'90vh'}>
-                        <Text fontSize={{ base: 'md', lg: '3xl'}} color={'blue.400'} as='b'>
-                            Meus projetos
-                        </Text>
-                        <Text fontSize={{ base: 'md', lg: '2xl' }} color={useColorModeValue('gray.700', 'gray.100')} >
-                            Cada projeto é uma peça unica de desenvolvimento.
-                        </Text>
+                    <Text fontSize={{ base: 'md', lg: '3xl'}} color={'blue.400'} as='b'>
+                        Meus projetos
+                    </Text>
+                    <Text fontSize={{ base: 'md', lg: '2xl' }} color={useColorModeValue('gray.700', 'gray.100')} >
+                        Cada projeto é uma peça unica de desenvolvimento.
+                    </Text>
                 </Stack>
             </Flex>
 

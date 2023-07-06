@@ -20,6 +20,7 @@ export default function ContactButton({text, icon, onClick}: IContactButtonProps
                 _hover={{
                 textDecoration: 'none',
                 bg: 'transparent',
+                
             }}>
                 {text}
             </Button>                        
