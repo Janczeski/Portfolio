@@ -42,7 +42,7 @@ export default function Projects(){
                                 shadow={'dark-lg'}
                                 borderRadius={"full"}
                                 padding="2"
-                                bgColor={'whiteAlpha.900'}
+                               
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
@@ -56,7 +56,7 @@ export default function Projects(){
                                 shadow={'dark-lg'}
                                 borderRadius={"full"}
                                 padding="2"
-                                bgColor={'whiteAlpha.900'}
+                                
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"

@@ -9,7 +9,6 @@ export default function IconsTech({icon}){
         shadow={'dark-lg'}
         borderRadius={"full"}
         padding="2"
-        
         display="flex"
         justifyContent="center"
         alignItems="center"
