@@ -1,5 +1,4 @@
 import { Stack, Image, Flex, Text, useColorModeValue, Box, Container, } from "@chakra-ui/react";
-import { FaReact } from "react-icons/fa";
 import { SiChakraui, SiFlutter } from "react-icons/si";
 
 

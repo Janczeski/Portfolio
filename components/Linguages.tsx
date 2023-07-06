@@ -1,4 +1,4 @@
-import { Stack, Flex, Text, useColorModeValue, Container, Box, useMediaQuery,  } from "@chakra-ui/react";
+import { Stack, Flex, Text, useColorModeValue, Box, useMediaQuery,  } from "@chakra-ui/react";
 import { FaJsSquare, FaReact } from "react-icons/fa";
 import { SiFlutter, SiTsnode , SiChakraui } from "react-icons/si";
 import IconsTech from "./IconsTech";

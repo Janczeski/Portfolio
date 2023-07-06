@@ -1,4 +1,4 @@
-import { Flex, Stack, Image, Heading, Text, useColorModeValue, useBreakpointValue, Spacer, Box,} from "@chakra-ui/react";
+import { Flex, Stack, Image, Heading, Text, useColorModeValue, useClipboard, Box,} from "@chakra-ui/react";
 import { AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 
 import {MdOutlineEmail } from "react-icons/md";
@@ -7,6 +7,7 @@ import ContactButton from "./ContactButton";
 import React from "react";
 
 export default function Contact(){
+    const { onCopy} = useClipboard("vinicius.zanquini.janczeski@gmail.com");
     const toast = useToast()
     function copyShow() {
         toast({
@@ -33,7 +34,9 @@ export default function Contact(){
                         </Text>
                         <ContactButton text='Whatsapp' icon={<AiOutlineWhatsApp size={40}/>} onClick={() => window.open('https://api.whatsapp.com/send?phone=5567998812814')}/>
                         <ContactButton text='Linkedin' icon={<AiOutlineLinkedin size={40}/>} onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}/>
+                        <Box  onClick={onCopy}>
                         <ContactButton text='E-Mail' icon={<MdOutlineEmail size={40}/>} onClick={() => copyShow()}/>
+                        </Box>
                     </Stack>
                 </Flex>
                 
