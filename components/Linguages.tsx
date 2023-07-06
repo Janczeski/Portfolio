@@ -53,27 +53,3 @@ export default function Linguages(){
       </Stack>
   );
 };
-
-/*<Stack minH={'10vh'} direction={{ base: 'column', md: 'column' }} bg={useColorModeValue('gray.100', 'gray.700')}>
-        <Flex p={5} flex={1} alignItems={'center'} justify={'center'} display={'flex'} flexWrap={'wrap'}>
-          <Stack direction={{ base: 'row', md: 'row' }} spacing={[0,2,4,8,12,16]} color={useColorModeValue('gray.900', 'gray.800')} marginBottom={'5vh'}>
-           
-            <Stack borderRightWidth={'3px'} borderColor={useColorModeValue('gray.300', 'gray.800')}  justify={'center'}>
-              <Text fontSize={['12px','18px']} marginRight={['1vh','2vh','3vh']} color={useColorModeValue('gray.800', 'gray.100')} minW={'10vh'}>
-                Tech Stack     
-              </Text>
-            </Stack>
-
-            <IconsTech icon={<FaJsSquare size={'40'}/>}/>
-
-             <IconsTech icon={<SiFlutter size={'40'}/>}/>
-
-             <IconsTech icon={<SiTsnode size={'40'}/>}/>
-
-             <IconsTech icon={<FaReact size={'40'}/>}/>
-
-             <IconsTech icon={<SiChakraui size={'50'}/>}/>
-        
-          </Stack>
-        </Flex>  
-      </Stack>*/

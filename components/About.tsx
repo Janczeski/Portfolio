@@ -1,7 +1,8 @@
-import { Stack, Heading, Flex, Text, Image, IconButton, useColorModeValue } from "@chakra-ui/react"
+import { Stack, Heading, Flex, Text, Image, IconButton, useColorModeValue, useBreakpointValue } from "@chakra-ui/react"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function About(){
+    const align = useBreakpointValue({ base: 'end', md: 'center' });
 
     return(
         <Stack minH={'85vh'} direction={{ base: 'column-reverse', md: 'row' }} id='Sobre' bg={useColorModeValue('gray.100', 'gray.700')}>
@@ -23,27 +24,27 @@ export default function About(){
                     <Stack direction={{ base: 'row', md: 'row' }} spacing={4}>
                         <div onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}>
                             <IconButton
-                                boxSize='30px'
+                                boxSize={['3vh', '4vh', '4vh', '5vh']}
                                 aria-label={""}
                                 border={'None'}
                                 variant={"outline"}
-                                fontSize='40px'
+                                fontSize={['4vh', '5vh', '5vh', '6vh']}
                                 icon={<FaLinkedin/>}/>
                         </div>
                         <div onClick={() => window.open('https://github.com/Janczeski')}>
                             <IconButton
-                                boxSize='30px'
+                                boxSize={['3vh', '4vh', '4vh', '5vh']}
                                 aria-label={""}
                                 border={'None'}
                                 variant={"outline"}
-                                fontSize='40px'
+                                fontSize={['4vh', '5vh', '5vh', '6vh']}
                                 icon={<FaGithub/>}/>
                         </div>
                     </Stack>
                 </Stack>
             </Flex>          
-            <Flex flex={1} align={'center'} justify={'center'} >
-                <Stack spacing={5} w={'full'} maxW={'60vh'}>
+            <Flex flex={1} align={align} justify={'center'} >
+                <Stack>
                     <Image
                         alignSelf={'center'}
                         maxH={['30vh', '30vh', '40vh', '50vh']}

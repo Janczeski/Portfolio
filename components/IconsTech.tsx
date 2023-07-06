@@ -12,8 +12,8 @@ export default function IconsTech({icon}){
         display="flex"
         justifyContent="center"
         alignItems="center"
-        width={['4vh', '5vh', '6vh', '7vh']}
-        height={['4vh', '5vh', '6vh', '7vh']}
+        width={['5vh', '6vh', '7vh']}
+        height={['5vh', '6vh', '7vh']}
         >
         {icon}
         </Box>

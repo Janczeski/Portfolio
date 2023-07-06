@@ -1,4 +1,4 @@
-import { Flex, Stack, Image, Heading, Text, useColorModeValue, useClipboard, Box,} from "@chakra-ui/react";
+import { Flex, Stack, Image, Heading, Text, useColorModeValue, useClipboard, Box, useBreakpointValue,} from "@chakra-ui/react";
 import { AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 
 import {MdOutlineEmail } from "react-icons/md";
@@ -9,6 +9,13 @@ import React from "react";
 export default function Contact(){
     const { onCopy} = useClipboard("vinicius.zanquini.janczeski@gmail.com");
     const toast = useToast()
+    const minh = useBreakpointValue({ base: '10vh', md: '95vh' });
+    const paddingtop = useBreakpointValue({ base: '10vh', md: '20vh' });
+    const paddingleft = useBreakpointValue({ base: '5vh', md: '2vh'});
+    const paddingright = useBreakpointValue({ base: '5vh', md: '2vh'});
+    const paddingbottom = useBreakpointValue({ base: '2vh', md: '2vh'});
+
+
     function copyShow() {
         toast({
         title: 'E-mail Copiado.',
@@ -21,9 +28,9 @@ export default function Contact(){
     return(
         
         
-        <Flex minH={'95vh'} justifyContent="center" bg={useColorModeValue('gray.100', 'gray.700')} id="Contato" direction={{ base: 'column', md: 'row' }} paddingTop={'20vh'}>
+        <Flex minH={minh} justifyContent="center" bg={useColorModeValue('gray.100', 'gray.700')} id="Contato" direction={{ base: 'column', md: 'row' }} paddingTop={paddingtop}>
                 <Flex>
-                    <Stack maxW={'60vh'} >
+                    <Stack maxW={'60vh'}  paddingLeft={paddingleft} paddingRight={paddingright} paddingBottom={paddingbottom}>
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                             <Text as={'span'}>
                                 Contate-me

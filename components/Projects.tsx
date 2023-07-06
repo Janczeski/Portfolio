@@ -1,11 +1,15 @@
-import { Stack, Image, Flex, Text, useColorModeValue, Box, Container, } from "@chakra-ui/react";
+import { Stack, Image, Flex, Text, useColorModeValue, Box, Container, useBreakpointValue, } from "@chakra-ui/react";
 import { SiChakraui, SiFlutter } from "react-icons/si";
 
 
-export default function Projects(){    
+export default function Projects(){
+    const paddingtop = useBreakpointValue({ base: '4vh', md: '10vh' });
+    const minh = useBreakpointValue({ base: '10vh', md: '60vh' });
+    const marginbottom = useBreakpointValue({ base: '10vh', md: '40vh' });
+    
     return(
-        <Stack minH={'60vh'} direction={{ base: 'column', md: 'column' }} marginBottom={'40vh'} id='Projetos'>
-            <Flex p={5} flex={1} justify={'center'}>
+        <Stack minH={minh} direction={{ base: 'column', md: 'column' }} marginBottom={marginbottom} id='Projetos'>
+            <Flex p={5} flex={1} justify={'center'} align={'center'}>
                 <Stack spacing={2} w={'full'} maxW={'90vh'}>
                     <Text fontSize={{ base: 'md', lg: '3xl'}} color={'blue.400'} as='b'>
                         Meus projetos
@@ -16,7 +20,7 @@ export default function Projects(){
                 </Stack>
             </Flex>
 
-            <Stack direction={{ base: 'column', md: 'row' }} paddingTop={'10vh'}>
+            <Stack direction={{ base: 'column', md: 'row' }} paddingTop={paddingtop} bgColor={'red'}>
                 <Flex flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={5} w={'full'} maxW={'60vh'}>
                         <Image
