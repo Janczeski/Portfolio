@@ -29,9 +29,6 @@ export default function withAction() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { toggleColorMode } = useColorMode()
   const [isActive, setIsActive] = useState(false);
-
-  const ad = isOpen ? '200px' : '20px';
-
   const handleClickScroll = (option) => {
     const element = document.getElementById(option);
     if (element) {
@@ -43,7 +40,7 @@ export default function withAction() {
   
   return (
     <>
-      <Box w='100%' bg={useColorModeValue('gray.200', 'gray.900')} position={'fixed'} marginBottom={ad} zIndex={1}>
+      <Box w='100%' bg={useColorModeValue('gray.200', 'gray.900')} position={'fixed'} zIndex={1}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'} marginRight={'4vw'} marginLeft={'3vw'} >
           <IconButton
               size={'md'}

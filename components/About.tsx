@@ -18,7 +18,7 @@ export default function About(){
                         </Text>
                     </Heading>
                     <Text fontSize={{ base: 'md', lg: '3xl' }} color={useColorModeValue('gray.700', 'gray.100')}>
-                        Desenvolvedor Full Stack, tecnólogo em Informática para Internet pelo Instito Federal (IFMS), 
+                        Desenvolvedor Full Stack, tecnólogo em Informática para Internet pelo Instituto Federal (IFMS), 
                         cursando Sistema de Informação na Universidade da Grande Dourados (UFGD).
                     </Text>
                     <Stack direction={{ base: 'row', md: 'row' }} spacing={4}>
