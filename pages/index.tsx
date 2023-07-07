@@ -13,7 +13,7 @@ export default function SplitScreen() {
     <>
       <Head>
           <title>Portfólio</title>
-          <link rel="icon" href="../images/favicon.ico" />
+          <link rel="icon" href="../images/test.png" />
       </Head>
       <Header/>
       <main>

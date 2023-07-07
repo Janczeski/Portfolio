@@ -15,7 +15,7 @@ export default function Projects(){
                         Meus projetos
                     </Text>
                     <Text fontSize={{ base: 'md', lg: '2xl' }} color={useColorModeValue('gray.700', 'gray.100')} >
-                        Cada projeto é uma peça unica de desenvolvimento.
+                        Cada projeto é uma peça única de desenvolvimento.
                     </Text>
                 </Stack>
             </Flex>

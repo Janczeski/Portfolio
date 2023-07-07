@@ -3,13 +3,13 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function About(){
     const align = useBreakpointValue({ base: 'end', md: 'center' });
-
+    
     return(
-        <Stack minH={'85vh'} direction={{ base: 'column-reverse', md: 'row' }} id='Sobre' bg={useColorModeValue('gray.100', 'gray.700')}>
+        <Stack minH={'85vh'} direction={{ base: 'column-reverse', md: 'row' }} id='Sobre' bg={useColorModeValue('gray.100', 'gray.700')} zIndex={10}>
             <Flex p={5} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={9} w={'full'} maxW={'70vh'} marginLeft={'10vw'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '6xl' }}>
-                        <Text as={'span'} position={'relative'}>
+                        <Text as={'span'}>
                             Vinicius Zanquini
                         </Text>
                         <br />
@@ -24,6 +24,7 @@ export default function About(){
                     <Stack direction={{ base: 'row', md: 'row' }} spacing={4}>
                         <div onClick={() => window.open('https://www.linkedin.com/in/vinicius-zanquini-janczeski-3171b5141')}>
                             <IconButton
+                                
                                 boxSize={['3vh', '4vh', '4vh', '5vh']}
                                 aria-label={""}
                                 border={'None'}
